@@ -13,11 +13,14 @@ export default function Landing() {
       <div className="landing">
       <Nav />
       <hr />
+      <div className="container">
         <div className="title">
           <h1 className="title-text">Live Captioning.</h1>
           <h1 className="title-text">System-wide.</h1>
+          <button className="start-session" onClick={SpeechRecognition.startListening}>start your session</button>
         </div>
-          <Link className="start-session">start your session</Link>
+          <div className="doc">Hello, welcome to readme! Start a session to get system-wide live captioning.{transcript}</div>
+        </div>
       </div>
     )
 }
