@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav {
+    height: 65px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    padding: 0 2rem;
+    /*border-bottom: 1px solid rgba(107,93,255,0.3);*/
+}
+
+.logo {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    color: #3C4A50;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.git-link {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #6B5DFF;
+    border-radius: 23.5px;
+    border-color: #6B5DFF;
+    text-align: center;
+    padding: 15px 40px;
+}

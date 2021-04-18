@@ -1,0 +1,32 @@
+hr {
+  height: 1px;
+  border: none;
+  background-color: rgba(107,93,255,0.3);
+}
+
+.title {
+  padding-top: 15vh;
+  text-align: left;
+  padding-bottom: 100px;
+}
+
+.title-text {
+  padding-top: 20px;
+  font-size: 8vh; 
+  line-height: 100%;
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+
+.start-session {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 7vh;
+  text-align: left;
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: #6B5DFF;
+  border-bottom: 1px solid rgba(107,93,255,0.5);
+}
+
