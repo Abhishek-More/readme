@@ -5,7 +5,6 @@
 }
 
 nav {
-
     height: 65px;
     top: 0;
     display: flex;
@@ -13,8 +12,7 @@ nav {
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: 0 2rem;
-    /*border-bottom: 1px solid rgba(107,93,255,0.3);*/
+    max-width: 8.5in;
 }
 
 .logo {
@@ -37,4 +35,13 @@ nav {
     border-color: #6B5DFF;
     text-align: center;
     padding: 15px 40px;
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
 }

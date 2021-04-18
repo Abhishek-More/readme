@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { useEffect } from 'react'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
 import translate from 'translate'
@@ -11,10 +12,7 @@ export default function Landing() {
 
     async function handleStart() {
         SpeechRecognition.startListening({ continuous: true })
-        let button = document.querySelector('button')
         console.log("Started")
-        button.innerHTML = 'stop your session'
-        button.onclick = handleStop;
     }
 
     function handleStop() {
@@ -25,19 +23,22 @@ export default function Landing() {
         button.onclick = handleStop;
     }
 
+    useEffect(() => {
+        fetch("http://localhost:3001/getwords?text=" + transcript).then(res => console.log(res));
+    }, [transcript]);
+
+    useEffect(() => {
+        handleStart();
+    }, [])
+
     return (
         <div className="landing">
             <Nav />
             <hr />
             <div className="container">
-                <div className="title">
-                    <h1 className="title-text">Live Captioning.</h1>
-                    <h1 className="title-text">System-wide.</h1>
-                    <button className="start-session" onClick={handleStart}>start your session</button>
-                </div>
-                <div className="doc">Hello, welcome to readme! Start a session to get system-wide live captioning.{transcript}</div>
+                <h2>Transcript April 18, 2021 10:02AM</h2>
+                {transcript}
             </div>
-            <div id="pdfLink"></div>
         </div>
     )
 }
