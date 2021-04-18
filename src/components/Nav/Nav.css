@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 nav {
+
     height: 65px;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 90%;
     margin: auto;
     padding: 0 2rem;
     /*border-bottom: 1px solid rgba(107,93,255,0.3);*/
@@ -20,7 +20,7 @@ nav {
 .logo {
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     color: #3C4A50;
     text-decoration: none;
     z-index: 1;

@@ -3,8 +3,11 @@ import './Nav.css'
 export default function Nav() {
     return (
         <nav>
-          <p className='logo'>.readme</p>
-          <a className='git-link' href="https://github.com/" target="_blank" rel='noreferrer'>View on GitHub</a>
+           <div>
+             <span className='logo'>.read</span>
+            <span style={{color:"#6B5DFF"}} className='logo'>me</span>
+          </div>
+          <a className='git-link' href="https://github.com/Abhishek-More/readme" target="_blank" rel='noreferrer'>View on GitHub</a>
         </nav>
     )
 }

@@ -11,16 +11,18 @@ hr {
 }
 
 .doc {
+  transition: all .2s ease-in-out;
   font-size: 18px;
   border: white;
   border-radius: 10px;
-  padding-top: 80px;
+  padding-top: 60px;
+  line-height: 125%;
   padding-left: 40px;
   padding-right: 40px;
   margin-right: 100px;
   margin-top: 50px;
   width: 550px;
-  height: 600px;
+  height: 650px;
   box-shadow: 1px 1px 10px -2px;
 
 }
@@ -45,6 +47,7 @@ hr {
   font-size: 6vh;
   margin-top: 80px;
   text-align: left;
+  outline: none;
   border: none;
   background: none;
   text-decoration: none;
@@ -52,3 +55,10 @@ hr {
   border-bottom: 1px solid rgba(107,93,255,0.5);
 }
 
+.start-session:hover {
+  opacity: 0.9;
+}
+
+.doc:hover {
+  transform: scale(1.01);
+}
